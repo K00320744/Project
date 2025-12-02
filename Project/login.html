@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACG Nexus — Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-wrap"><div class="bg-blob"></div><div class="bg-blob2"></div></div>
+
+  <div class="container">
+    <header class="header" style="margin-bottom:12px">
+      <div class="brand">ACG Nexus</div>
+      <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Articles</a>
+        <button class="theme-btn">Toggle Theme</button>
+      </nav>
+      <button class="hamburger" aria-label="menu" style="background:transparent;border:0;color:var(--muted);font-weight:800">☰</button>
+    </header>
+
+    <div class="form-card reveal">
+      <h2>Sign in to ACG Nexus</h2>
+      <p class="small">Manage content, post articles and moderate comments.</p>
+
+      <input id="email" class="input" placeholder="Email" type="email" />
+      <input id="password" class="input" placeholder="Password" type="password" />
+
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <label style="display:flex; align-items:center; gap:8px;"><input type="checkbox" id="remember"> <span class="small">Remember me</span></label>
+        <a class="small" href="#">Forgot password?</a>
+      </div>
+
+      <button class="btn" onclick="login()">Sign In</button>
+      <p class="small" style="text-align:center; margin-top:12px">Demo: admin@example.com / 123456</p>
+    </div>
+
+    <footer style="margin-top:36px;text-align:center;color:var(--muted);font-size:14px;">© ACG Nexus</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

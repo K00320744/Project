@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACG Nexus — Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js only for admin page -->
+</head>
+<body>
+  <div class="bg-wrap"><div class="bg-blob"></div><div class="bg-blob2"></div></div>
+  <div class="progress-bar"></div>
+
+  <div class="container">
+    <header class="header">
+      <div class="brand">ACG Nexus</div>
+      <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Articles</a>
+        <a href="login.html">Admin</a>
+        <button class="theme-btn">Toggle Theme</button>
+      </nav>
+      <button class="hamburger" aria-label="menu" style="background:transparent;border:0;color:var(--muted);font-weight:800">☰</button>
+    </header>
+
+    <section class="hero reveal">
+      <div class="hero-left">
+        <div class="hero-card">
+          <div class="h1">ACG Nexus — The Beat of ACG</div>
+          <div class="h1-sub">Your source for anime, gaming, and event culture. Neon reviews, exclusive coverage.</div>
+          <div class="search" role="search">
+            <input placeholder="Search anime, games, tags..." aria-label="Search">
+            <button class="btn-ghost">Search</button>
+          </div>
+          <div style="display:flex; gap:12px; margin-top:14px;">
+            <div style="flex:1;" class="card small"><strong style="color:var(--text)">Featured</strong><div class="small">New season breakdown</div></div>
+            <div style="width:160px;" class="card small"><strong style="color:var(--text)">Events</strong><div class="small">Con highlights</div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-side reveal">
+        <div class="poster">
+          <img src="assets/images/img.jpg" style="width:100%; border-radius:8px"/>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <main>
+        <h3 style="color:var(--text); margin-bottom:12px">Trending</h3>
+        <div class="trending-grid">
+          <article class="article-card reveal">
+            <div class="thumb"><img src="assets/images/Top%20Seasonal%20Must-watch.jpg" alt="" /></div>
+            <span class="tag">ANIME</span>
+            <h3 style="color:var(--text); margin-top:8px">Top Seasonal Must-watch</h3>
+            <p class="small">3h ago</p>
+          </article>
+
+          <article class="article-card reveal">
+            <div class="thumb"><img src="assets/images/Indie%20Showcase%20Highlights.png" alt="" /></div>
+            <span class="tag">GAMES</span>
+            <h3 style="color:var(--text); margin-top:8px">Indie Showcase Highlights</h3>
+            <p class="small">6h ago</p>
+          </article>
+
+          <article class="article-card reveal">
+            <div class="thumb"><img src="assets/images/ACG%20Convention%20Roundup.webp" alt="" /></div>
+            <span class="tag">EVENTS</span>
+            <h3 style="color:var(--text); margin-top:8px">ACG Convention Roundup</h3>
+            <p class="small">1d ago</p>
+          </article>
+
+          <article class="article-card reveal">
+            <div class="thumb"><img src="assets/images/Why%20Indies%20Are%20Thriving.webp" alt="" /></div>
+            <span class="tag">OPINION</span>
+            <h3 style="color:var(--text); margin-top:8px">Why Indies Are Thriving</h3>
+            <p class="small">2d ago</p>
+          </article>
+        </div>
+      </main>
+
+      <aside class="sidebar">
+        <div class="box reveal">
+          <h4>Popular Posts</h4>
+          <div style="display:flex;flex-direction:column; gap:8px;">
+            <div style="display:flex; gap:10px; align-items:center;">
+              <img src="https://picsum.photos/seed/s1/80/80" style="width:48px;border-radius:8px;"/>
+              <div><div style="color:var(--text); font-weight:700;">Why This Season Is Unmissable</div><div class="small">2d ago</div></div>
+            </div>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <img src="https://picsum.photos/seed/s2/80/80" style="width:48px;border-radius:8px;"/>
+              <div><div style="color:var(--text); font-weight:700;">Top 5 Indie Gems</div><div class="small">5d ago</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box reveal">
+          <h4>Tags</h4>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <span class="tag" style="background:rgba(255,255,255,0.06); color:var(--muted)">Anime</span>
+            <span class="tag" style="background:rgba(255,255,255,0.06); color:var(--muted)">Manga</span>
+            <span class="tag" style="background:rgba(255,255,255,0.06); color:var(--muted)">Cosplay</span>
+            <span class="tag" style="background:rgba(255,255,255,0.06); color:var(--muted)">Esports</span>
+          </div>
+        </div>
+
+        <div class="box reveal">
+          <h4>Quick Links</h4>
+          <div class="small"><a href="#">About</a></div>
+          <div class="small"><a href="#">Contact</a></div>
+          <div class="small"><a href="#">Privacy</a></div>
+        </div>
+      </aside>
+    </section>
+
+    <footer style="margin-top:36px; text-align:center; color:var(--muted); font-size:14px;">© ACG Nexus</footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

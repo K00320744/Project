@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACG Nexus — Admin</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="bg-wrap"><div class="bg-blob"></div><div class="bg-blob2"></div></div>
+
+  <div class="container">
+    <header class="header" style="margin-bottom:12px">
+      <div class="brand">ACG Nexus — Admin</div>
+      <nav class="header-nav">
+        <a href="index.html">View Site</a>
+        <button class="theme-btn">Toggle Theme</button>
+      </nav>
+    </header>
+
+    <section class="admin-grid reveal">
+      <div>
+        <div style="display:flex; gap:12px; margin-bottom:12px;">
+          <div class="metric"><div class="small">Posts</div><div style="font-size:22px; font-weight:800; color:var(--text)">124</div></div>
+          <div class="metric"><div class="small">Comments</div><div style="font-size:22px; font-weight:800; color:var(--text)">342</div></div>
+          <div class="metric"><div class="small">Users</div><div style="font-size:22px; font-weight:800; color:var(--text)">3,412</div></div>
+        </div>
+
+        <div class="card reveal">
+          <h3 style="color:var(--text)">Activity</h3>
+          <canvas id="activityChart" height="120"></canvas>
+        </div>
+
+        <div class="card reveal" style="margin-top:12px">
+          <h3 style="color:var(--text)">Editor / Actions</h3>
+          <p class="small">Phase 2: Connect these to API endpoints for full CRUD operations.</p>
+          <div style="display:flex; gap:10px; margin-top:10px;"><button class="btn-ghost">New Article</button><button class="btn">Open Editor</button></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="recent-table reveal"><h4 style="color:var(--text)">Recent Posts</h4>
+          <ul style="list-style:none; padding:0; margin:0;">
+            <li class="small" style="padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.03)">Best Anime of 2025 <span style="float:right; color:var(--muted)">Aug 5</span></li>
+            <li class="small" style="padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.03)">Indie Spotlight <span style="float:right; color:var(--muted)">Jul 29</span></li>
+            <li class="small" style="padding:8px 0;">Convention Guide <span style="float:right; color:var(--muted)">Jul 20</span></li>
+          </ul>
+        </div>
+
+        <div class="recent-table reveal" style="margin-top:12px">
+          <h4 style="color:var(--text)">Quick Actions</h4>
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
+            <button class="btn-ghost">Manage Users</button>
+            <button class="btn-ghost">Site Settings</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer style="margin-top:28px;text-align:center;color:var(--muted);font-size:14px">© ACG Nexus Admin</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
