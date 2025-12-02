@@ -54,4 +54,52 @@ Custom layouts for all screens.
 ---
 
 ## 📂 Project Structure
+acg-nexus/
+│
+├── index.html
+├── article.html
+├── login.html
+├── admin.html
+│
+├── styles.css
+├── script.js
+│
+└── assets/
+├── images/
+└── icons/
+
+---
+
+## 🧪 Testing & Validation
+- Fully tested on Chrome / Firefox / Edge  
+- Mobile tested on iOS & Android  
+- Validated HTML & CSS  
+- Optimized font sizes and spacing  
+- All components built with accessibility in mind  
+
+---
+
+## 📈 Future Improvements
+- Full backend (Firebase / Express)  
+- CRUD article editor  
+- User system  
+- Commenting system  
+- Search & tags  
+- Dark mode memory persistence  
+- Cloud deployment (Netlify/Vercel)  
+
+---
+
+## 📜 License
+This project is created for educational purposes.  
+You may fork or reference the UI components.
+
+---
+
+## 👤 Author
+**Your Name**  
+Immersive Digital Media – Software Development  
+
+If you like this project, ⭐ star the repo!
+
 
