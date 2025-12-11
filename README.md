@@ -67,7 +67,3 @@ acg-nexus/
 └── assets/
 ├── images/
 └── icons/
-
-If you like this project, ⭐ star the repo!
-
-
